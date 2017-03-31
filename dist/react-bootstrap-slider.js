@@ -153,6 +153,11 @@
         }, {
             key: "updateSliderValues",
             value: function updateSliderValues() {
+
+                if (this.props.ticks_labels && (this.mySlider.ticks_labels || this.mySlider.options.ticks_labels)) {
+                    this.mySlider = new _bootstrapSlider2.default(this.node, this.props);
+                }
+
                 if (this.props.min && (this.mySlider.min || this.mySlider.options.min)) {
                     this.mySlider.setAttribute("min", this.props.min);
                 }
