@@ -155,6 +155,7 @@
             value: function updateSliderValues() {
 
                 if (this.props.ticks_labels && (this.mySlider.ticks_labels || this.mySlider.options.ticks_labels)) {
+                    this.mySlider && this.mySlider.destroy();
                     this.mySlider = new _bootstrapSlider2.default(this.node, this.props);
                 }
 

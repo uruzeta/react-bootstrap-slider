@@ -34,7 +34,11 @@
   "author": "Michael Brown <brownieboy@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bootstrap-slider": "^9.7.2"
+    "bootstrap": "^3.3.7",
+    "bootstrap-slider": "^9.4.1",
+    "jquery": "^3.1.1",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",

@@ -65,6 +65,7 @@ export class ReactBootstrapSlider extends React.Component {
 
     updateSliderValues() {
         if (this.props.ticks_labels && (this.mySlider.ticks_labels || this.mySlider.options.ticks_labels)) {
+            this.mySlider && this.mySlider.destroy();
             this.mySlider = new Slider(this.node, this.props);
         }
 
