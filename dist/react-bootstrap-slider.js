@@ -123,7 +123,12 @@
 
                 this.mySlider = new _bootstrapSlider2.default(this.node, sliderAttributes);
 
-                //     this.updateSliderValues();
+                this.addEvents();
+
+            }
+        }, {
+            key: 'addEvents',
+            value: function addEvents() {
                 if (this.props.change || this.props.handleChange) {
                     var changeEvent = this.props.change || this.props.handleChange;
                     this.mySlider.on("change", function (e) {
@@ -157,6 +162,7 @@
                 if (this.props.ticks_labels && (this.mySlider.ticks_labels || this.mySlider.options.ticks_labels)) {
                     this.mySlider && this.mySlider.destroy();
                     this.mySlider = new _bootstrapSlider2.default(this.node, this.props);
+                    this.addEvents();
                 }
 
                 if (this.props.min && (this.mySlider.min || this.mySlider.options.min)) {
